@@ -84,6 +84,10 @@ def es_tokenizer():
 
 
 @pytest.fixture(scope="session")
+def fa_tokenizer():
+    return get_lang_class("fa").Defaults.create_tokenizer()
+
+@pytest.fixture(scope="session")
 def fi_tokenizer():
     return get_lang_class("fi").Defaults.create_tokenizer()
 
